@@ -218,6 +218,12 @@ li{
   margin-bottom: 0.2rem;
 }
 
+#inst-sub-sub{
+  margin-left: 2rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
 #tech-sub{
   margin-left: 2rem;
   margin-top: 0.2rem;
@@ -237,4 +243,3 @@ li{
 #down-sub-3{
   margin: 0;
 }
-

@@ -3,12 +3,11 @@ site_name: Portfolio Alfred Narjes
 nav:
   - Home: index.md
   - Projects:
-    - Project 1: projects/project1.md
-    - Project 2: projects/project2.md
-    - Project 3: projects/project3.md
+    - Rainbow Snake: projects/rainbowSnake.md
+    - Ping-Pong-Gone-Wrong: projects/pingPongGoneWrong.md
+    - CSV Manipulation: projects/csvManipulation.md
     - Bad UI/UX: projects/badUI.md
-  - Credits:
-    - Credits: credits.md
+  - Credits: credits.md
 
 
 extra_css:
