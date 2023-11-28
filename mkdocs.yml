@@ -7,6 +7,8 @@ nav:
     - Project 2: projects/project2.md
     - Project 3: projects/project3.md
     - Bad UI/UX: projects/badUI.md
+  - Credits:
+    - Credits: credits.md
 
 
 extra_css:
