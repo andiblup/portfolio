@@ -1,0 +1,74 @@
+
+
+/* FLEX */
+.d-flex {
+  display: flex;
+}
+
+.f-row {
+  display: flex;
+}
+.f-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.f-row-around{
+  display: flex;
+  justify-content: space-around;
+}
+
+.f-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+
+
+
+
+/* Justify Content */
+.j-center {
+  justify-content: center;
+}
+
+/* Align Items */
+.a-center {
+  align-items: center;
+}
+
+
+
+.f-column {
+  width: 100%;
+  
+}
+
+.f.column-left {
+  width: 20%;
+  
+}
+
+.f-column-right {
+  margin: 2rem;
+  width: 60%;
+}
+
+
+
+
+#container {
+  margin: 20px;
+  width: 200px;
+  height: 8px;
+  position: relative;
+}
+
+
+
+
+
