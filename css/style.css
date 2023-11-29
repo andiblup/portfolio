@@ -66,10 +66,12 @@
   width: 200px;
   height: 8px;
   position: relative;
-  display: flex;
 }
 
-
+.blockquote-teal {
+  border-left-color: teal;
+  color: teal;
+}
 
 
 
