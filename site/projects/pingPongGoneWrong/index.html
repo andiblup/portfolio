@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../project1/">
+        <link rel="prev" href="../rainbowSnake/">
       
       
-        <link rel="next" href="../project3/">
+        <link rel="next" href="../csvManipulation/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Project 2 - Portfolio Alfred Narjes</title>
+        <title>Ping-Pong-Gone-Wrong - Portfolio Alfred Narjes</title>
       
     
     
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Project 2
+              Ping-Pong-Gone-Wrong
             
           </span>
         </div>
@@ -219,7 +219,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../project1/" class="md-tabs__link">
+        <a href="../rainbowSnake/" class="md-tabs__link">
           
   
     
@@ -229,6 +229,23 @@
         </a>
       </li>
     
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../credits/" class="md-tabs__link">
+        
+  
+    
+  
+  Credits
+
+      </a>
+    </li>
   
 
       
@@ -349,11 +366,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../project1/" class="md-nav__link">
+      <a href="../rainbowSnake/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Project 1
+    Rainbow Snake
   </span>
   
 
@@ -380,7 +397,7 @@
         
   
   <span class="md-ellipsis">
-    Project 2
+    Ping-Pong-Gone-Wrong
   </span>
   
 
@@ -397,11 +414,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../project3/" class="md-nav__link">
+      <a href="../csvManipulation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Project 3
+    CSV Manipulation
   </span>
   
 
@@ -438,6 +455,25 @@
   
 
     
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../credits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Credits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -453,16 +489,58 @@
                   
 
 
-  <h1>Project 2</h1>
+  <h1>Ping-Pong-Gone-Wrong</h1>
 
 <style rel="stylesheet" href="css/style.css"></style>
 
-<div id="progress-bar"></div>
-
+<!-- <div id="progress-bar"></div> -->
+<div id="container"></div>
 <script src="https://cdn.jsdelivr.net/npm/progressbar.js@1.1.0/dist/progressbar.min.js"></script>
 <script>
-    var bar = new ProgressBar.Line('#progress-bar', { strokeWidth: 2 });
-    bar.animate(0.7);  // Beispiel: Setzt den Fortschritt auf 70%
+    // var bar = new ProgressBar.Line('#progress-bar', { strokeWidth: 2 });
+    // bar.animate(0.7);  // Beispiel: Setzt den Fortschritt auf 70%
+let bar = new ProgressBar.Line(container, {
+  strokeWidth: 4,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#FFEA82',
+  trailColor: '#eee',
+  trailWidth: 1,
+  svgStyle: {width: '100%', height: '100%'},
+  text: {
+    style: {
+      // Text color.
+      // Default: same as stroke color (options.color)
+      color: '#999',
+      position: 'absolute',
+      right: '0',
+      top: '30px',
+      padding: 0,
+      margin: 0,
+      transform: null
+    },
+    autoStyleContainer: false
+  },
+  from: {color: '#FFEA82'},
+  to: {color: '#ED6A5A'},
+  step: (state, bar) => {
+    bar.setText(Math.round(bar.value() * 100) + ' / 100');
+  }
+});
+let full = false
+setInterval(() => {
+    if (!full){
+        bar.animate(0.7);
+        full = !full;
+    }
+}, 2000);
+setInterval(() => {
+    if (full){
+        bar.animate(0.0);
+        full = !full;
+    }
+}, 4000);
+
 </script>
 
 
@@ -549,7 +627,7 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "navigation.bottom", "navigation.expand", "navigation.instant", "navigation.instant.progress", "navigation.instant.prefetch", "navigation.tracking", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "navigation.bottom", "navigation.expand", "navigation.instant", "navigation.instant.progress", "navigation.instant.prefetch", "navigation.tracking", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.6c14ae12.min.js"></script>

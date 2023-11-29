@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../project3/">
+        <link rel="prev" href="../csvManipulation/">
       
+      
+        <link rel="next" href="../../credits/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -217,7 +219,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../project1/" class="md-tabs__link">
+        <a href="../rainbowSnake/" class="md-tabs__link">
           
   
     
@@ -227,6 +229,23 @@
         </a>
       </li>
     
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../credits/" class="md-tabs__link">
+        
+  
+    
+  
+  Credits
+
+      </a>
+    </li>
   
 
       
@@ -347,11 +366,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../project1/" class="md-nav__link">
+      <a href="../rainbowSnake/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Project 1
+    Rainbow Snake
   </span>
   
 
@@ -367,11 +386,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../project2/" class="md-nav__link">
+      <a href="../pingPongGoneWrong/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Project 2
+    Ping-Pong-Gone-Wrong
   </span>
   
 
@@ -387,11 +406,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../project3/" class="md-nav__link">
+      <a href="../csvManipulation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Project 3
+    CSV Manipulation
   </span>
   
 
@@ -432,6 +451,25 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../credits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Credits
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -606,23 +644,49 @@ let imgIsBig = false;
 let next = document.getElementsByClassName("next");
 let prev = document.getElementsByClassName("prev");
 let caption = document.getElementsByClassName("caption");
+let numbertext = document.getElementsByClassName("numbertext");
 
 function enlargeImg(id) {
     if (imgIsBig) {
         resetImg(id);
         imgIsBig = false;
-        next.style.display = "block";
-        prev.style.display = "block";
-        caption.style.display = "block";
+        //console.log(numbertext);
+        for (let element of numbertext) {
+          element.style.display = "block"
+        }
+        for (let element of caption) {
+          element.style.display = "block"
+        }
+        for (let element of prev) {
+          element.style.display = "block"
+        }
+        for (let element of next) {
+          element.style.display = "block"
+        }
+
+        // numbertext.style.display = "block";
+        // next.style.display = "block";
+        // prev.style.display = "block";
+        // caption.style.display = "block";
     } else {
         img = document.getElementById(id);
-        img.style.transform = "scale(3)";
+        img.style.transform = "scale(2.5)";
         img.style.transition = "transform 0.25s ease";
-        img.style.marginTop = "5rem";
+        //img.style.marginTop = "5rem";
         imgIsBig = true;
-        next.style.display = "none";
-        prev.style.display = "none";
-        caption.style.display = "none";
+
+        for (let element of numbertext) {
+          element.style.display = "none"
+        }
+        for (let element of caption) {
+          element.style.display = "none"
+        }
+        for (let element of prev) {
+          element.style.display = "none"
+        }
+        for (let element of next) {
+          element.style.display = "none"
+        }
 
         // slides[slideIndex-1].style.transform = "scale(3)";
         // slides[slideIndex-1].style.transition = "transform 0.25s ease";
@@ -639,7 +703,7 @@ function resetImg(id) {
     img = document.getElementById(id);
     img.style.transform = "scale(1)";
     img.style.transition = "transform 0.25s ease";
-    img.style.marginTop = "0rem";
+    //img.style.marginTop = "0rem";
 
     // img = document.getElementById(id);
     // slides[slideIndex-1].style.transform = "scale(1)";
@@ -731,7 +795,7 @@ function resetImg(id) {
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "navigation.bottom", "navigation.expand", "navigation.instant", "navigation.instant.progress", "navigation.instant.prefetch", "navigation.tracking", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "navigation.bottom", "navigation.expand", "navigation.instant", "navigation.instant.progress", "navigation.instant.prefetch", "navigation.tracking", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.6c14ae12.min.js"></script>

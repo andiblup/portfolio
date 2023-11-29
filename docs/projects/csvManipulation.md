@@ -50,7 +50,7 @@
         <h3 id="inst-sub" class="subtitle">Installation</h3>
     </div>
     <div class="f-row">
-        <blockquote id="inst-sub-sub" class="subtitle">Into many Columns</blockquote>
+        <blockquote style="border-left-color: teal; color: black;" id="inst-sub-sub" class="subtitle">Into many Columns</blockquote>
     </div>
     <div class="f-row">
         <ol class="description">

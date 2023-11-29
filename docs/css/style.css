@@ -68,7 +68,10 @@
   position: relative;
 }
 
-
+.blockquote-teal {
+  border-left-color: teal;
+  color: teal;
+}
 
 
 
