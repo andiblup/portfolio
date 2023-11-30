@@ -52,14 +52,14 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       toggle:
-        icon: material/weather-sunny #fontawesome/solid/sun #material/toggle-switch-off-outline
+        icon: material/weather-sunny #/light.png #fontawesome/solid/sun #material/toggle-switch-off-outline
         name: Switch to dark mode
       primary: deep purple
       accent: teal
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
-        icon: material/weather-night #fontawesome/solid/moon #material/toggle-switch
+        icon: material/weather-night #/dark.png #material/weather-night #fontawesome/solid/moon #material/toggle-switch
         name: Switch to light mode
       primary: deep purple
       accent: teal
