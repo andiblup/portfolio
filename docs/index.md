@@ -6,7 +6,10 @@
 
 
 <!-- ![Image of me](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg) -->
-<div class="card" style="display: flex; min-width: 100%; justify-content: center;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="200rem" width="200rem" /></div>
+<div class="card parent"><img class="moving-element" src="./img/self/cvFoto.png"  /></div>
+
+<!-- style="display: flex; min-width: 100%; justify-content: center; " -->
+<!-- height="200rem" width="200rem" -->
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
@@ -16,7 +19,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 <!-- #### WEB -->
 Frontend | | Rating | Description
 --|--------|------------------------|--
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40px" height="40px" />|HTML 5         |:star: :star: :star: :star:|HTML5 is the latest version of the Hypertext Markup Language used for creating and structuring content on the web, offering enhanced multimedia and interactive capabilities.
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40px" height="40px" />|HTML 5 |:star: :star: :star: :star:|HTML5 is the latest version of the Hypertext Markup Language used for creating and structuring content on the web, offering enhanced multimedia and interactive capabilities.
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40px" height="40px" />|CSS 3         |:star: :star: :star: :star:|CSS3 is a stylesheet language used for enhancing the presentation and layout of HTML elements on web pages, providing advanced styling and design options.
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40px" height="40px" />|JS         |:star: :star: :star: :star:|JavaScript is a versatile, high-level programming language used in web development to add interactivity, manipulate web page content, and create dynamic, client-side experiences.
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="40px" height="40px" />|Bootstrap         |:star: :star: :star:|Bootstrap is a popular open-source front-end framework that simplifies and accelerates web development by providing pre-designed, responsive, and customizable components and styles for building modern, mobile-friendly websites and web applications.
