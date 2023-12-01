@@ -198,7 +198,8 @@
 }
 
 .subtitle {
-  color: black;
+  color: #7E56C2;
+  font-weight: bold;
 }
 
 li{
@@ -243,3 +244,4 @@ li{
 #down-sub-3{
   margin: 0;
 }
+

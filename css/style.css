@@ -75,3 +75,38 @@
 
 
 
+/*
+ *  Experimental
+ *
+ */
+
+ .parent {
+  position: relative;
+  width: 60vw;
+  height: 20vh;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moving-element {
+  position: absolute;
+  width: 10vw;
+  height: 10vh;
+  background-color: transparent;
+}
+.parent:hover > .moving-element {
+  animation: moveX 10s linear infinite;
+}
+
+@keyframes moveX {
+  0%, 100% {
+    left: 0;
+  }
+  50% {
+    left: calc(100% - 10vw);
+    rotate: 360deg;
+  }
+}
