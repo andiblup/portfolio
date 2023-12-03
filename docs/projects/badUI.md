@@ -112,12 +112,12 @@
     </div>
     <div class="f-row-around">
         <a href="https://gitlab.com/andiblup/bad_ui"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" width="60px" height="60px"/></a>
-        <a href="https://gitlab.com/andiblup/bad_ui"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="60px" height="60px"/></a>
+        <a href="https://github.com/andiblup/Bad-UI-UX"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="60px" height="60px"/></a>
     </div>
 </div>
 </div>
 
-<script>
+<!-- <script>
   let slideIndex = 1;
   //let slides = document.getElementsByClassName("mySlides");
 showSlides(slideIndex);
@@ -217,4 +217,4 @@ function resetImg(id) {
     // slides[slideIndex-1].style.transform = "scale(1)";
     // slides[slideIndex-1].style.transition = "transform 0.25s ease";
     }
-</script>
+</script> -->

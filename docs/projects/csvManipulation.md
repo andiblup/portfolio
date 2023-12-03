@@ -7,19 +7,34 @@
       <div class="slideshow-container">
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img class="car-img" id="img1" src="../../img/badui/main.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img1')">
-          <div class="caption">Main Page - 2000th Browser Games Site</div>
+          <div class="numbertext">1 / 6</div>
+          <img class="car-img" id="img1" src="../../img/csv/eineA.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img1')">
+          <div class="caption">Here you have to choose which kind of manipulation you want to do <br> "In eine Spalte" means into one column</div>
         </div>
         <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img class="car-img" id="img2" src="../../img/badui/login.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img2')">
-          <div class="caption">Tricky, unusual and unexplained login page</div>
+          <div class="numbertext">2 / 6</div>
+          <img class="car-img" id="img2" src="../../img/csv/eineB.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img2')">
+          <div class="caption">In the dist folder is the data stored, the converter.py file is stored here (relevant if not using the exe)</div>
         </div>
         <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img class="car-img" id="img3" src="../../img/badui/game.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img3')">
-          <div class="caption">Dino game with unusual controls - animated and with gamesounds</div>
+          <div class="numbertext">3 / 6</div>
+          <img class="car-img" id="img3" src="../../img/csv/eineC.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img3')">
+          <div class="caption">Both marked are the input and the output data, the folder also contains the .exe file</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 6</div>
+          <img class="car-img" id="img4" src="../../img/csv/mehrereA.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img4')">
+          <div class="caption">Here you have to choose which kind of manipulation you want to do <br> "In mehrere Spalten" means into many columns</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 6</div>
+          <img class="car-img" id="img5" src="../../img/csv/mehrereB.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img5')">
+          <div class="caption">In the dist folder is the data stored, the converter.py file is stored here (relevant if not using the exe)</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 6</div>
+          <img class="car-img" id="img6" src="../../img/csv/mehrereC.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img6')">
+          <div class="caption">Both marked are the input and the output data, the folder also contains the .exe file</div>
         </div>
         <!-- Next and previous buttons -->
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -31,6 +46,9 @@
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
       </div>
     </div>
     <div class="f-column f-column-right">
@@ -50,18 +68,88 @@
         <h3 id="inst-sub" class="subtitle">Installation</h3>
     </div>
     <div class="f-row">
-        <blockquote style="border-left-color: teal; color: black;" id="inst-sub-sub" class="subtitle">Into many Columns</blockquote>
+        <blockquote style="border-left-color: #7E56C2; color: teal;" id="inst-sub-sub" class="subtitle">Into many Columns</blockquote>
     </div>
     <div class="f-row">
         <ol class="description">
-            <li>Download or clone <a href="https://gitlab.com/andiblup/bad_ui">this repository</a></li>
+            <li>Download or clone <a href="https://github.com/andiblup/csv_manip">this repository</a></li>
             <ul>
                 <li>If downloaded unzip the package</li>
             </ul>
-            <li>Open the main folder and drag or open the main.html file with your browser</li>
-            <li>Try to make it to the end where the credits are shown</li>
+            <li>Open the "In mehrere Spalten" folder, here is where you will drop your .csv file</li>
+            <li>IMPORTANT: The default file name has to be data.csv and the product will be called endProduct.csv</li>
             <ul>
-            <li><b>Tip:</b> The second page, the form, is very hard to beat. If you want to skip it you could continue with the login.html file in the login folder</li>
+              <li>
+                You could change theese names in the lines 8 and p of the converter.py file, but it wont change anything in the .exe programm. You would have to run everything with the python command in the terminal instead of      doubleklick the .exe programm.
+              </li>
+              <li>
+                If you use the .exe and the default names
+              </li>
+              <ol>
+                <li>Copie the file you want to transform into the "dist" folder</li>
+                <li>Doubleclick the converter.exe</li>
+              </ol>
+              <li>
+                If you dont use the exe
+              </li>
+              <ol>
+                <li>Make sure you have installed at least Python 3.8 and added it to the path variables</li>
+                <li>Copie the file you want to transform into the SAME folder with the converter.py</li>
+                <li>Open this folder with the terminal</li>
+                <li>Then use the command: 
+                ```shell
+                python converter.py
+                ```
+                or
+                ```shell
+                python3 converter.py
+                ```
+                to run the script
+                </li>
+              </ol>
+            </ul>
+        </ol>
+    </div>
+    <div class="f-row">
+        <blockquote style="border-left-color: #7E56C2; color: teal;" id="inst-sub-sub" class="subtitle">Into a single Column</blockquote>
+    </div>
+    <div class="f-row">
+        <ol class="description">
+            <li>Download or clone <a href="https://github.com/andiblup/csv_manip">this repository</a></li>
+            <ul>
+                <li>If downloaded unzip the package</li>
+            </ul>
+            <li>Open the "In eine Spalte" folder, here is where you will drop your .csv file</li>
+            <li>IMPORTANT: The default file name has to be data.csv and the product will be called endProduct.csv</li>
+            <ul>
+              <li>
+                You could change theese names in the lines 8 and p of the converter.py file, but it wont change anything in the .exe programm. You would have to run everything with the python command in the terminal instead of doubleklick the .exe programm. Alternate you can convert it manually into a .wxe by yourself, you can find help <a href="https://pyinstaller.org/en/stable/">here</a>.
+              </li>
+              <li>
+                If you use the .exe and the default names
+              </li>
+              <ol>
+                <li>Copie the file you want to transform into the "dist" folder</li>
+                <li>Doubleclick the converter.exe</li>
+              </ol>
+              <li>
+                If you dont use the exe
+              </li>
+              <ol>
+                <li>Make sure you have installed at least Python 3.8 and added it to the path variables</li>
+                <li>Copie the file you want to transform into the SAME folder with the converter.py</li>
+                <li>Open this folder with the terminal</li>
+                <li>Then use the command: 
+                ```shell
+                python converter.py
+                ```
+                or
+                ```shell
+                python3 converter.py
+                ```
+                to run the script
+                </li>
+              </ol>
             </ul>
         </ol>
     </div>
@@ -98,9 +186,7 @@
         <h3 id="tech-sub" class="subtitle">Used Technologies</h3>
     </div>
     <div class="f-row-around">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="120px" height="120px"/>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="120px" height="120px"/>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="120px" height="120px"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="120px" height="120px"/>
     </div>
     
   </div>
@@ -114,13 +200,12 @@
         <h3 id="down-sub-3" class="subtitle">Download</h3>
     </div>
     <div class="f-row-around">
-        <a href="https://gitlab.com/andiblup/bad_ui"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" width="60px" height="60px"/></a>
-        <a href="https://gitlab.com/andiblup/bad_ui"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="60px" height="60px"/></a>
+        <a href="https://github.com/andiblup/csv_manip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="60px" height="60px"/></a>
     </div>
 </div>
 </div>
 
-<script>
+<!-- <script>
   let slideIndex = 1;
   //let slides = document.getElementsByClassName("mySlides");
 showSlides(slideIndex);
@@ -220,4 +305,4 @@ function resetImg(id) {
     // slides[slideIndex-1].style.transform = "scale(1)";
     // slides[slideIndex-1].style.transition = "transform 0.25s ease";
     }
-</script>
+</script> -->

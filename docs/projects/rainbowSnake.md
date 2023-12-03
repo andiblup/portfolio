@@ -8,18 +8,18 @@
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
           <div class="numbertext">1 / 3</div>
-          <img class="car-img" id="img1" src="../../img/badui/main.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img1')">
-          <div class="caption">Main Page - 2000th Browser Games Site</div>
+          <img class="car-img" id="img1" src="../../img/rainbow/spawn.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img1')">
+          <div class="caption">Right after the start of the game</div>
         </div>
         <div class="mySlides fade">
           <div class="numbertext">2 / 3</div>
-          <img class="car-img" id="img2" src="../../img/badui/login.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img2')">
-          <div class="caption">Tricky, unusual and unexplained login page</div>
+          <img class="car-img" id="img2" src="../../img/rainbow/long.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img2')">
+          <div class="caption">How it looks if you play about one minute</div>
         </div>
         <div class="mySlides fade">
           <div class="numbertext">3 / 3</div>
-          <img class="car-img" id="img3" src="../../img/badui/game.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img3')">
-          <div class="caption">Dino game with unusual controls - animated and with gamesounds</div>
+          <img class="car-img" id="img3" src="../../img/rainbow/dead.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img3')">
+          <div class="caption">This is how it looks like if you die</div>
         </div>
         <!-- Next and previous buttons -->
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -36,7 +36,7 @@
     <div class="f-column f-column-right">
         <h3 id="desc-sub" class="subtitle">Description</h3>
     <p class="description">
-      As one of our initial tasks at CODERS.BAY Vienna, we were tasked with creating a website in 2 weeks using HTML5, CSS3, and JavaScript, designed to make user interaction as challenging as possible. This project allowed us to freely explore working with vanilla JavaScript and express our creativity in a unique way.
+      Rainbow Snake symbolizes my early venture into coding with Python and the Turtle library. Inspired by the classic game Snake, I infused vibrant colors, breaking its conventional boundaries. The project became a creative symphony, enhancing my programming skills and showcasing my journey from novice to enthusiast. Rainbow Snake is more than code—it's a testament to my passion, sparking an ongoing exploration of the digital realm.
     </p>
     </div>
   </div>
@@ -55,11 +55,20 @@
             <ul>
                 <li>If downloaded unzip the package</li>
             </ul>
-            <li>Open the main folder and drag or open the main.html file with your browser</li>
+            <li> <b>IMPORTANT!!</b>Make sure you have at least Python 3.8 installed and added to the path variables. 
+            <br> If needed you can download python <a href="https://www.python.org/downloads/">here</a></li>
             <li>Try to make it to the end where the credits are shown</li>
-            <ul>
-            <li><b>Tip:</b> The second page, the form, is very hard to beat. If you want to skip it you could continue with the login.html file in the login folder</li>
-            </ul>
+            <li>Navigate into the rainbow_snake folder and open it with the terminal</li>
+            <li>Then use the command: 
+                ```shell
+                python main.py
+                ```
+                or
+                ```shell
+                python3 main.py
+                ```
+                to run the script
+                </li>
         </ol>
     </div>
   </div>
@@ -95,9 +104,7 @@
         <h3 id="tech-sub" class="subtitle">Used Technologies</h3>
     </div>
     <div class="f-row-around">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="120px" height="120px"/>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="120px" height="120px"/>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="120px" height="120px"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="120px" height="120px"/>
     </div>
     
   </div>
@@ -111,13 +118,12 @@
         <h3 id="down-sub-3" class="subtitle">Download</h3>
     </div>
     <div class="f-row-around">
-        <a href="https://gitlab.com/andiblup/bad_ui"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" width="60px" height="60px"/></a>
-        <a href="https://gitlab.com/andiblup/bad_ui"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="60px" height="60px"/></a>
+        <a href="https://github.com/andiblup/rainbow_snake"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="60px" height="60px"/></a>
     </div>
 </div>
 </div>
 
-<script>
+<!-- <script>
   let slideIndex = 1;
   //let slides = document.getElementsByClassName("mySlides");
 showSlides(slideIndex);
@@ -217,4 +223,4 @@ function resetImg(id) {
     // slides[slideIndex-1].style.transform = "scale(1)";
     // slides[slideIndex-1].style.transition = "transform 0.25s ease";
     }
-</script>
+</script> -->
