@@ -58,13 +58,13 @@
   </div>
 </div>
 
-
+<!-- 
 <p style="margin-left: 2rem;">
     Hey, I’m Alfred Narjes, a part-time coffee addict and full-time passionate programmer.<br>
     I have always been fascinated by the newest technological achievements,<br>
     so one of my biggest dreams is to become a part of those.<br>
     I am not only a software maniac, I'm also an enthusiast when it comes to hardware. <br>
-</p>
+</p> -->
 
 
 ---

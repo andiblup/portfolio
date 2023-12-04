@@ -637,13 +637,64 @@
 
 <h1 id="welcome-to-my-portfolio">Welcome to my portfolio</h1>
 <h2 id="about-me">About Me</h2>
-<!-- ![Image of me](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg) -->
-<div class="card parent"><img class="moving-element" src="./img/self/cvFoto.png"  /></div>
+<!-- Roling face -->
+<!-- <div class="card parent"><img class="moving-element" src="./img/self/cvFoto.png"  /></div> -->
 
 <!-- style="display: flex; min-width: 100%; justify-content: center; " -->
 <!-- height="200rem" width="200rem" -->
 
-<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<div class="card d-flex">
+  <div class="f-row">
+    <div class="f-column f-column-left">
+    <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img class="car-img" id="img1" src="./img/self/cvFoto.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img1')">
+          <div class="caption">Me, myself and I</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img class="car-img" id="img2" src="./img/self/cvFoto.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img2')">
+          <div class="caption">Me, myself and I</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img class="car-img" id="img3" src="./img/self/cvFoto.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img3')">
+          <div class="caption">Me, myself and I</div>
+        </div>
+        <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    <div class="f-column f-column-right">
+        <h3 id="desc-sub" class="subtitle">About Me</h3>
+    <p class="description">
+      Hey, I’m Alfred Narjes, a part-time coffee addict and full-time passionate programmer.<br>
+    I have always been fascinated by the newest technological achievements,<br>
+    so one of my biggest dreams is to become a part of those.<br>
+    I am not only a software maniac, I'm also an enthusiast when it comes to hardware. <br>
+    </p>
+    </div>
+  </div>
+</div>
+
+<p style="margin-left: 2rem;">
+    Hey, I’m Alfred Narjes, a part-time coffee addict and full-time passionate programmer.<br>
+    I have always been fascinated by the newest technological achievements,<br>
+    so one of my biggest dreams is to become a part of those.<br>
+    I am not only a software maniac, I'm also an enthusiast when it comes to hardware. <br>
+</p>
+
 <hr />
 <h2 id="techstack">Techstack</h2>
 <!-- #### WEB -->
@@ -1136,11 +1187,15 @@
 </table>
 <h2 id="projects">Projects</h2>
 <hr />
-<h3 id="rainbow-snake"><a href="http://127.0.0.1:8000/projects/project1/">Rainbow Snake</a>:</h3>
+<h3 id="rainbow-snake"><a href="https://andiblup.github.io/portfolio/projects/rainbowSnake/">Rainbow Snake</a>:</h3>
 <blockquote>
 <p><strong>Python, Turtle @VS CODE</strong></p>
 </blockquote>
-<p>Rainbow Snake was one of my very first projects ever. As I began learning to program with Python, I quickly stumbled upon libraries like Turtle and Pygame, and I started recreating small games. My first choice was Snake.<br></p>
+<p>Embarking on my programming journey, Rainbow Snake stands out as a colorful testament to my early foray into the captivating world of coding. As I delved into the realms of Python, the vast landscape of libraries beckoned, and among them, Turtle emerged as my companion on this exhilarating voyage. Inspired by the timeless classic, Snake, I eagerly seized the opportunity to breathe new life into this iconic game.</p>
+<p>Rainbow Snake was born not just as a replication but as a vibrant tapestry of innovation. The conventional boundaries of Snake were shattered as I infused a burst of colors into its pixelated existence. The serpentine avatar, once confined to monochrome pixels, now navigated a kaleidoscopic landscape, leaving trails of brilliance in its wake.</p>
+<p>The development process became a symphony of code, color, and creativity. Each nibble of the rainbow-hued apples intensified the visual spectacle, transforming a simple gaming experience into a visually enchanting escapade. The dynamic hues seamlessly blended with the ever-growing serpent, creating a visual crescendo that mirrored my evolving programming prowess.</p>
+<p>Navigating the challenges of programming, I not only conquered the intricacies of game logic but also honed my skills in handling user input, collision detection, and the overall architecture of a gaming environment. The project metamorphosed into a dynamic showcase of my newfound programming abilities, serving as a tangible testament to my journey from novice to enthusiast.</p>
+<p>Rainbow Snake became more than a mere coding exercise; it became a reflection of my passion and determination to transform lines of code into interactive, visually captivating experiences. As the serpent slithered through the vibrant spectrum, I discovered the boundless possibilities that programming offered, igniting a spark that would fuel my ongoing exploration of the digital realm.</p>
 <hr />
 <h4 id="ping-pong-gone_wrong"><a href="https://github.com/andiblup/ping_pong_gone_wrong">Ping-Pong-Gone_Wrong</a>:</h4>
 <blockquote>
@@ -1191,6 +1246,10 @@
 <strong>@Intellij Community, JMonkeyEngineSDK</strong></p>
 </blockquote>
 <p>Working together as a group of seven individuals, we are developing a 3D or puzzle-platformer 2-player co-op game. The Players must use their surroundings or abilities to navigate through levels and platforms to reach the goal. The objective is to capture a mobile cannon that continually moves to the next level, gradually unveiling more of the story behind why we are pursuing it and why the little 'Tourette' is running away. We are programming the entire project using the JMonkeyEngine and IntelliJ Community Edition, following agile development methodologies.</p>
+<script>
+
+
+</script>
 
 
 
