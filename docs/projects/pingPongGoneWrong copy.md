@@ -55,7 +55,7 @@
             <ul>
                 <li>If downloaded unzip the package</li>
             </ul>
-            <li> <b>IMPORTANT!!</b>Make sure you have at least Python 3.8 installed and added to the path variables. 
+            <li> <b>IMPORTANT!!</b><br>Make sure you have at least Python 3.8 installed and added to the path variables. 
             <br> If needed you can download python <a href="https://www.python.org/downloads/">here</a></li>
             <li>Try to make it to the end where the credits are shown</li>
             <li>Navigate into the rainbow_snake folder and open it with the terminal</li>
