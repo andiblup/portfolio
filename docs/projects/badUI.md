@@ -107,14 +107,19 @@
 
 <div class="card d-flex">
   <div class=f-col>
-<div id="down-sub-2" class="f-row">
-        <h3 id="down-sub-3" class="subtitle">Download</h3>
-    </div>
-    <div class="f-row-around">
-        <a href="https://gitlab.com/andiblup/bad_ui"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" width="60px" height="60px"/></a>
-        <a href="https://github.com/andiblup/Bad-UI-UX"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="60px" height="60px"/></a>
-    </div>
-</div>
+    <div id="down-sub-2" class="f-row">
+            <h3 id="down-sub-3" class="subtitle">Download</h3>
+      </div>
+      <div class="f-row-around">
+        <div class="gitlab">
+          <a href="https://gitlab.com/andiblup/bad_ui">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" width="60px" height="60px"/></a>
+        </div>
+        <div class="github">
+            <a href="https://github.com/andiblup/Bad-UI-UX"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="60px" height="60px"/></a>
+        </div>
+      </div>
+  </div>
 </div>
 
 <!-- <script>

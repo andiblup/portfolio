@@ -16,6 +16,10 @@
   display: flex;
   justify-content: space-around;
 }
+.f-row-center{
+  display: flex;
+  justify-content: center;
+}
 
 .f-column {
   display: flex;
@@ -110,3 +114,86 @@
     rotate: 360deg;
   }
 }
+
+
+/* Hover description */
+/* .gitlab {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.gitlab::after {
+  content: "Gitlab";
+  position: absolute;
+  bottom: 30px;
+  left: 40%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.gitlab:hover::after {
+  opacity: 1;
+} */
+.gitlab {
+  position: relative;
+  display: inline-flex;
+}
+
+.gitlab::after {
+  content: "Gitlab";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0;
+  white-space: nowrap;
+}
+
+.gitlab:hover::after {
+  opacity: 1;
+}
+
+.gitlab img {
+  display: block; /* Entfernt möglichen unteren Rand/Leerraum */
+}
+
+/* Github */
+.github {
+  position: relative;
+  display: inline-flex;
+}
+
+.github::after {
+  content: "Github";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0;
+  white-space: nowrap;
+}
+
+.github:hover::after {
+  opacity: 1;
+}
+
+.github img {
+  display: block;
+}
+

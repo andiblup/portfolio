@@ -7,19 +7,57 @@
       <div class="slideshow-container">
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img class="car-img" id="img1" src="../../img/pong/start.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img1')">
-          <div class="caption">This is how it looks like if you started the project</div>
+          <div class="numbertext">1 / 9</div>
+          <img class="car-img" id="img1" src="../../img/planellos/landing.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img1')">
+          <div class="caption">The landing page where the user can either login or register</div>
         </div>
         <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img class="car-img" id="img2" src="../../img/pong/endless.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img2')">
-          <div class="caption">The game is over when its participants decide to</div>
+          <div class="numbertext">2 / 9</div>
+          <img class="car-img" id="img2" src="../../img/planellos/register.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img2')">
+          <div class="caption">This is the register form</div>
         </div>
         <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img class="car-img" id="img3" src="../../img/pong/caught.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img3')">
-          <div class="caption">One of the key features:<br>You can catch the ball in your paddle and speed it up with every bounce<br>But as faster as it gets it will be harder to control the direction it will be shot</div>
+          <div class="numbertext">3 / 9</div>
+          <img class="car-img" id="img3" src="../../img/planellos/login.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img3')">
+          <div class="caption">In this form the user can login to his/her account</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 9</div>
+          <img class="car-img" id="img4" src="../../img/planellos/home.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img4')">
+          <div class="caption">This is the homepage the gets directed to</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 9</div>
+          <img class="car-img" id="img5" src="../../img/planellos/sidebar.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img5')">
+          <div class="caption">
+            If you hover on the left side a sidebar will appear<br>
+            on the side bar you can edit your profile, get a quick overview<br>and add tasklists or users.
+          </div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">6 / 9</div>
+          <img class="car-img" id="img6" src="../../img/planellos/addUser.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img6')">
+          <div class="caption">If you want to add a user to your tasklists you just have to click in the sidebar<br>onto the "Teilnehmer hinzufügen" or the plus icon on top of the userlist.<br>Then just type in the username.</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">7 / 9</div>
+          <img class="car-img" id="img7" src="../../img/planellos/addNewNote.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img7')">
+          <div class="caption">
+            Onklick at the plus icon at the bottom of each tasklist you can add a new task to it.
+          </div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">8 / 9</div>
+          <img class="car-img" id="img8" src="../../img/planellos/notes.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img8')">
+          <div class="caption">
+          After adding a new note you will only see the description.<br>
+          You can expand the note, see the content and be able to delete and maintain the single note.
+          </div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">9 / 9</div>
+          <img class="car-img" id="img9" src="../../img/planellos/maintain.png" style="width:100%" width="400px" height="400px" onclick="enlargeImg('img9')">
+          <div class="caption">If you decide to update your note you can update every note by itself and/or the tasklists title and description</div>
         </div>
         <!-- Next and previous buttons -->
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -36,7 +74,7 @@
     <div class="f-column f-column-right">
         <h3 id="desc-sub" class="subtitle">Description</h3>
     <p class="description">
-      In my second programming project, I created a two-player version of Pong, facing and overcoming challenges with adaptability. The project highlighted the importance of technology choices in shaping the interactive experience, blending coding with an exploration of hardware-software dynamics. Turning setbacks into strengths, I transformed bugs into intentional features, showcasing the transformative power of creative problem-solving in game development. This Pong journey illustrates how technical expertise and creativity can elevate a classic game recreation into a distinctive masterpiece.
+      In a four-week project for Web Frontend, I made a Trello copy using VUE.js 3 and used an existing backend. Focusing on user interface design, I translated intricate designs into interactive experiences, ensuring a responsive and dynamic interface. Navigating challenges, the project improved my skills in VUE.js 3, complex user interactions, and responsive design principles. This task deepened my understanding of the technology and showcased my commitment to blending design aesthetics with functional implementation for a memorable user experience.
     </p>
     </div>
   </div>
@@ -83,7 +121,12 @@
         <h3 id="tech-sub" class="subtitle">Used Technologies</h3>
     </div>
     <div class="f-row-around">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="120px" height="120px"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="120px" height="120px"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="120px" height="120px"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" width="120px" height="120px"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="120px" height="120px"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="120px" height="120px"/>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuetify/vuetify-original.svg" width="120px" height="120px"/>
     </div>
     
   </div>
@@ -97,7 +140,9 @@
         <h3 id="down-sub-3" class="subtitle">Download</h3>
     </div>
     <div class="f-row-around">
-        <a href="https://github.com/andiblup/ping_pong_gone_wrong"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="60px" height="60px"/></a>
+    <div class="gitlab">
+        <a href="https://gitlab.com/andiblup/vueprojekt"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="Gitlab" width="60px" height="60px"/></a>
+    </div>
     </div>
 </div>
 </div>
