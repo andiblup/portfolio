@@ -13,7 +13,9 @@ nav:
     - Codename Ananas: projects/codenameAnanas.md
     - VeggieWedges: projects/veggieWedges.md
     - PortfolioPage: projects/portfolio.md
-  #- Credits: credits.md
+  - Credits: 
+    - Devicons: credits.md
+    - Devicons 2: credits.md
 
 
 extra_css:
@@ -27,7 +29,7 @@ extra_css:
 
 extra_javascript:
     - ./js/main.js
-    - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+    #- 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
     # - ./js/bootstrap/bootstrap.js
     # - ./js/bootstrap/bootstrap.min.js
 
@@ -47,10 +49,12 @@ theme:
     - content.code.annotation
     - content.code.copy
     - navigation.bottom
-    # - navigation.expand
+    
+    - navigation.expand
     - navigation.instant
     - navigation.instant.progress
     - navigation.instant.prefetch
+
     - navigation.tracking
     - navigation.indexes
   language: en
