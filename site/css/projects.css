@@ -186,9 +186,7 @@
   color: teal;
 }
 
-.f-row{
-  
-}
+
 
 .f-col{
   display: flex;
@@ -200,6 +198,9 @@
 .subtitle {
   color: #7E56C2;
   font-weight: bold;
+}
+.subtitle-multi {
+  margin-left: -2%!important;
 }
 
 li{
