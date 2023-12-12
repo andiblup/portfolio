@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="./projects.css">
-
+<div style="color: red; font-size: 10rem;">Work<br>in<br>progress</div>
+<div style="color: green; font-size: 5rem;">Github/Gitlab and Techstack is correct</div>
 <div class="card d-flex">
   <div class="f-row">
     <div class="f-column f-column-left">
@@ -74,7 +75,7 @@
     <div class="f-column f-column-right">
         <h3 id="desc-sub" class="subtitle">Description</h3>
     <p class="description">
-      In a four-week project for Web Frontend, I made a Trello copy using VUE.js 3 and used an existing backend. Focusing on user interface design, I translated intricate designs into interactive experiences, ensuring a responsive and dynamic interface. Navigating challenges, the project improved my skills in VUE.js 3, complex user interactions, and responsive design principles. This task deepened my understanding of the technology and showcased my commitment to blending design aesthetics with functional implementation for a memorable user experience.
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
     </p>
     </div>
   </div>
@@ -131,15 +132,50 @@
     <div class="f-row">
         <h3 id="tech-sub" class="subtitle">Used Technologies</h3>
     </div>
-    <div class="f-row-around">
-        <span alt="HTML 5" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="120px" height="120px"/></span>
-        <span alt="JS" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="120px" height="120px"/></span>
-        <span alt="npm" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" width="120px" height="120px"/></span>
-        <span alt="Scss" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="120px" height="120px"/></span>
-        <span alt="Vue 3" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="120px" height="120px"/></span>
-        <span alt="Vuetify" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuetify/vuetify-original.svg" width="120px" height="120px"/></span>
+    <div class="f-column f-column-start-space">
+      <div class="f-row m-t-4">
+        <b id="tech-sub" class="subtitle subtitle-multi f-self-start ">Android Application:</b>
+        <span alt="Kotlin" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" width="120px" height="120px"/>
+        </span>
+        <span alt="Android Jetpack" class="hov-desc"><img src="https://user-content.gitlab-static.net/f93649f4351d3f4587c0ffe1db049137b27f13ba/68747470733a2f2f342e62702e626c6f6773706f742e636f6d2f2d4e6e416b563576705975772f584e4d59463452744c76492f41414141414141414937302f6b64674c6d33636e544f34464234725543307639736d73634e337a484a506c4c67434c63424741732f73313630302f4a65747061636b5f6c6f676f25324225323532383225323532392e706e67" width="120px" height="120px"/>
+        </span>
+        <span alt="Android Compose" class="hov-desc"><img src="https://user-content.gitlab-static.net/51fdfe31ea1288a0b8a6fc6591dd57273c7b026d/68747470733a2f2f332e62702e626c6f6773706f742e636f6d2f2d5656703357764a766c38342f5830567536456a597144492f4141414141414141506a552f5a4f4d4b69556c676667386f6b3844593848632d6f634f76476442307a38364167434c63424741735948512f73313630302f6a65747061636b253242636f6d706f736525324269636f6e5f5247422e706e67" width="120px" height="120px"/>
+        </span>
+        <span alt="Android Studio" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" width="120px" height="120px"/>
+        </span>
+      </div>
+      <div class="f-row m-t-4">
+        <b id="tech-sub" class="subtitle subtitle-multi f-self-start ">Backend:</b>
+        <span alt="Java" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="120px" height="120px"/>
+        </span>
+        <span alt="Spring Boot" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="120px" height="120px"/>
+        </span>
+        <span alt="Intellij Community" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" width="120px" height="120px"/>
+        </span>
+      </div>
+      <div class="f-row m-t-4">
+        <b id="tech-sub" class="subtitle subtitle-multi f-self-start ">Maps Service:</b>
+        <span alt="Mapbox" class="hov-desc"><img src="https://user-content.gitlab-static.net/47d151ad324455c46742c2500ce144bb7a89c499/68747470733a2f2f7777772e7376677265706f2e636f6d2f73686f772f3333313437362f6d6170626f782e737667" width="120px" height="120px"/>
+        </span>
+      </div>
+      <div class="f-row m-t-4">
+        <b id="tech-sub" class="subtitle subtitle-multi f-self-start ">Hosting:</b>
+        <span alt="XAMPP" class="hov-desc"><img src="https://user-content.gitlab-static.net/5fc743e8f3c389211a06b0180cee1fe09fb9bda1/68747470733a2f2f7777772e617061636865667269656e64732e6f72672f696d616765732f78616d70702d6c6f676f2d61633935306564662e737667" width="120px" height="120px"/>
+        </span>
+      </div>
+      <div class="f-row m-t-4">
+        <b id="tech-sub" class="subtitle subtitle-multi f-self-start ">Configuration, Dependencies:</b>
+        <span alt="Gradle" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg" width="120px" height="120px"/>
+        </span>
+        <span alt="Maven" class="hov-desc"><img src="https://user-content.gitlab-static.net/27fd052ee3929d0739d0708a90cc148063cbf4e4/68747470733a2f2f7777772e7376677265706f2e636f6d2f73686f772f3335343035312f6d6176656e2e737667" width="120px" height="120px"/>
+        </span>
+      </div>
+      <div class="f-row m-t-4">
+        <b id="tech-sub" class="subtitle subtitle-multi f-self-start ">Projectmanagement:</b>
+        <span alt="Jira" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" width="120px" height="120px"/>
+        </span>
+      </div>
     </div>
-    
   </div>
 </div>
 
@@ -151,7 +187,7 @@
         <h3 id="down-sub-3" class="subtitle">Download</h3>
     </div>
     <div class="f-row-around">
-          <a alt="Gitlab" class="hov-desc" href="https://gitlab.com/andiblup/vueprojekt">
+          <a alt="Gitlab" class="hov-desc" href="https://gitlab.com/andiblup/fantasyquest">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="Gitlab" width="60px" height="60px"/>
           </a>
     </div>

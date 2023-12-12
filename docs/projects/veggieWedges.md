@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="./projects.css">
-
+<div style="color: red; font-size: 10rem;">Work<br>in<br>progress</div>
+<div style="color: green; font-size: 5rem;">Github/Gitlab and Techstack is correct</div>
 <div class="card d-flex">
   <div class="f-row">
     <div class="f-column f-column-left">
@@ -74,7 +75,7 @@
     <div class="f-column f-column-right">
         <h3 id="desc-sub" class="subtitle">Description</h3>
     <p class="description">
-      In a four-week project for Web Frontend, I made a Trello copy using VUE.js 3 and used an existing backend. Focusing on user interface design, I translated intricate designs into interactive experiences, ensuring a responsive and dynamic interface. Navigating challenges, the project improved my skills in VUE.js 3, complex user interactions, and responsive design principles. This task deepened my understanding of the technology and showcased my commitment to blending design aesthetics with functional implementation for a memorable user experience.
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.experience.
     </p>
     </div>
   </div>

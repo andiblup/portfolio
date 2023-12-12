@@ -158,35 +158,13 @@
 
 <hr style="margin-top: 0.5rem; margin-bottom: 0.5rem;" />
 
-<!-- <div class="card d-flex">
-  <div class=f-col>
-    <div class="f-row">
-        <h3 id="tech-sub" class="subtitle">Used Technologies</h3>
-    </div>
-    <div class="f-row-around">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="120px" height="120px"/>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="120px" height="120px"/>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="120px" height="120px"/>
-    </div>
-    <div id="down-sub" class="f-row">
-        <h3 class="subtitle">Download</h3>
-    </div>
-    <div class="f-row-around">
-        <a href="https://gitlab.com/andiblup/bad_ui"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" width="120px" height="120px"/></a>
-        <a href="https://gitlab.com/andiblup/bad_ui"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="120px" height="120px"/></a>
-    </div>
-  </div>
-</div>
-
-<hr style="margin-top: 0.5rem; margin-bottom: 0.5rem;" /> -->
-
 <div class="card d-flex">
   <div class=f-col>
     <div class="f-row">
         <h3 id="tech-sub" class="subtitle">Used Technologies</h3>
     </div>
     <div class="f-row-around">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="120px" height="120px"/>
+        <span alt="Python" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="120px" height="120px"/></span>
     </div>
     
   </div>
@@ -200,7 +178,7 @@
         <h3 id="down-sub-3" class="subtitle">Download</h3>
     </div>
     <div class="f-row-around">
-        <a href="https://github.com/andiblup/csv_manip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="60px" height="60px"/></a>
+        <a alt="Github" class="hov-desc" href="https://github.com/andiblup/csv_manip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="60px" height="60px"/></a>
     </div>
 </div>
 </div>

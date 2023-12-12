@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="./projects.css">
-
+<div style="color: red; font-size: 10rem;">Work<br>in<br>progress</div>
+<div style="color: green; font-size: 5rem;">Github/Gitlab and Techstack is correct</div>
 <div class="card d-flex">
   <div class="f-row">
     <div class="f-column f-column-left">
@@ -36,7 +37,7 @@
     <div class="f-column f-column-right">
         <h3 id="desc-sub" class="subtitle">Description</h3>
     <p class="description">
-      In my second programming project, I created a two-player version of Pong, facing and overcoming challenges with adaptability. The project highlighted the importance of technology choices in shaping the interactive experience, blending coding with an exploration of hardware-software dynamics. Turning setbacks into strengths, I transformed bugs into intentional features, showcasing the transformative power of creative problem-solving in game development. This Pong journey illustrates how technical expertise and creativity can elevate a classic game recreation into a distinctive masterpiece.
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
     </p>
     </div>
   </div>
@@ -83,7 +84,12 @@
         <h3 id="tech-sub" class="subtitle">Used Technologies</h3>
     </div>
     <div class="f-row-around">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="120px" height="120px"/>
+        <span alt="HTML 5" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="120px" height="120px"/></span>
+        <span alt="JavaScript" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="120px" height="120px"/></span>
+        <span alt="npm" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" width="120px" height="120px"/></span>
+        <span alt="Scss" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="120px" height="120px"/></span>
+        <span alt="Vue 3" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="120px" height="120px"/></span>
+        <span alt="Vuetify" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuetify/vuetify-original.svg" width="120px" height="120px"/></span>
     </div>
     
   </div>
@@ -97,7 +103,7 @@
         <h3 id="down-sub-3" class="subtitle">Download</h3>
     </div>
     <div class="f-row-around">
-        <a href="https://github.com/andiblup/ping_pong_gone_wrong"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="60px" height="60px"/></a>
+        <a alt="Gitlab" class="hov-desc" href="https://gitlab.com/andiblup/vuecipes"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="60px" height="60px"/></a>
     </div>
 </div>
 </div>

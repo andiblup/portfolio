@@ -83,7 +83,9 @@
         <h3 id="tech-sub" class="subtitle">Used Technologies</h3>
     </div>
     <div class="f-row-around">
+        <span alt="Python" class="hov-desc">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="120px" height="120px"/>
+        </span>
     </div>
     
   </div>
@@ -97,7 +99,7 @@
         <h3 id="down-sub-3" class="subtitle">Download</h3>
     </div>
     <div class="f-row-around">
-        <a href="https://github.com/andiblup/ping_pong_gone_wrong"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="60px" height="60px"/></a>
+        <a alt="Github" class="hov-desc" href="https://github.com/andiblup/ping_pong_gone_wrong"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="60px" height="60px"/></a>
     </div>
 </div>
 </div>
