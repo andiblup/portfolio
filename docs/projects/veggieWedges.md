@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="./projects.css">
 
+<div id="copy-popup" class="hov-desc2 d-none" ></div>
 <div style="color: red; font-size: 10rem;">Work<br>in<br>progress</div>
 <div style="color: green; font-size: 5rem;">Github/Gitlab and Techstack is correct</div>
 <div class="card d-flex">
@@ -71,6 +72,12 @@
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
       </div>
     </div>
     <div class="f-column f-column-right">
@@ -135,11 +142,11 @@
     </div>
     <div class="f-row-around">
         <span alt="HTML 5" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="120px" height="120px"/></span>
-        <span alt="JS" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="120px" height="120px"/></span>
-        <span alt="npm" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" width="120px" height="120px"/></span>
-        <span alt="Scss" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="120px" height="120px"/></span>
-        <span alt="Vue 3" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="120px" height="120px"/></span>
-        <span alt="Vuetify" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuetify/vuetify-original.svg" width="120px" height="120px"/></span>
+        <span alt="SCSS" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="120px" height="120px"/></span>
+        <span alt="Bootstrap" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="120px" height="120px"/></span>
+        <span alt="JavaScript" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="120px" height="120px"/></span>
+        <span alt="PHP" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="120px" height="120px"/></span>
+        <span alt="Laravel" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" width="120px" height="120px"/></span>
     </div>
     
   </div>
@@ -153,8 +160,8 @@
         <h3 id="down-sub-3" class="subtitle">Download</h3>
     </div>
     <div class="f-row-around">
-          <a alt="Gitlab" class="hov-desc" href="https://gitlab.com/andiblup/vueprojekt">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="Gitlab" width="60px" height="60px"/>
+          <a alt="Github" class="hov-desc" href="https://github.com/andiblup/VeggieWedges/">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Gitlab" width="60px" height="60px"/>
           </a>
     </div>
 </div>

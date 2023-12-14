@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="./projects.css">
 
+<div id="copy-popup" class="hov-desc2 d-none" ></div>
 <div class="card d-flex">
   <div class="f-row">
     <div class="f-column f-column-left">
@@ -133,7 +134,7 @@
     </div>
     <div class="f-row-around">
         <span alt="HTML 5" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="120px" height="120px"/></span>
-        <span alt="JS" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="120px" height="120px"/></span>
+        <span alt="JavaScript" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="120px" height="120px"/></span>
         <span alt="npm" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" width="120px" height="120px"/></span>
         <span alt="Scss" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="120px" height="120px"/></span>
         <span alt="Vue 3" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="120px" height="120px"/></span>

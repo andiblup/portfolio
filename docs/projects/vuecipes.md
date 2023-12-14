@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="./projects.css">
+
+<div id="copy-popup" class="hov-desc2 d-none" ></div>
 <div style="color: red; font-size: 10rem;">Work<br>in<br>progress</div>
 <div style="color: green; font-size: 5rem;">Github/Gitlab and Techstack is correct</div>
 <div class="card d-flex">
@@ -103,7 +105,7 @@
         <h3 id="down-sub-3" class="subtitle">Download</h3>
     </div>
     <div class="f-row-around">
-        <a alt="Gitlab" class="hov-desc" href="https://gitlab.com/andiblup/vuecipes"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="60px" height="60px"/></a>
+        <a alt="Gitlab" class="hov-desc" href="https://gitlab.com/andiblup/vuecipes"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" width="60px" height="60px"/></a>
     </div>
 </div>
 </div>

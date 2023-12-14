@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="./projects.css">
 
+<div id="copy-popup" class="hov-desc2 d-none" ></div>
 <div class="card d-flex">
   <div class="f-row">
     <div class="f-column f-column-left">

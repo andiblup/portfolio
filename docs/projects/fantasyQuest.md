@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="./projects.css">
 
+<div id="copy-popup" class="hov-desc2 d-none" ></div>
 <div style="color: red; font-size: 10rem;">Work<br>in<br>progress</div>
 <div style="color: green; font-size: 5rem;">Github/Gitlab and Techstack is correct</div>
 <div class="card d-flex">
@@ -131,11 +132,11 @@
 <div class="card d-flex">
   <div class=f-col>
     <div class="f-row">
-        <h3 id="tech-sub" class="subtitle">Used Technologies</h3>
+        <h3 id="tech-sub" class="subtitle m-b-3">Used Technologies</h3>
     </div>
     <div class="f-column f-column-start-space">
-      <div class="f-row m-t-4">
-        <b id="tech-sub" class="subtitle subtitle-multi f-self-start ">Android Application:</b>
+        <b id="tech-sub" class="subtitle subtitle-multi">Android Application:</b>
+      <div class="f-row-around m-b-3">
         <span alt="Kotlin" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" width="120px" height="120px"/>
         </span>
         <span alt="Android Jetpack" class="hov-desc"><img src="https://user-content.gitlab-static.net/f93649f4351d3f4587c0ffe1db049137b27f13ba/68747470733a2f2f342e62702e626c6f6773706f742e636f6d2f2d4e6e416b563576705975772f584e4d59463452744c76492f41414141414141414937302f6b64674c6d33636e544f34464234725543307639736d73634e337a484a506c4c67434c63424741732f73313630302f4a65747061636b5f6c6f676f25324225323532383225323532392e706e67" width="120px" height="120px"/>
@@ -145,8 +146,8 @@
         <span alt="Android Studio" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" width="120px" height="120px"/>
         </span>
       </div>
-      <div class="f-row m-t-4">
-        <b id="tech-sub" class="subtitle subtitle-multi f-self-start ">Backend:</b>
+        <b id="tech-sub" class="subtitle subtitle-multi">Backend:</b>
+      <div class="f-row-around m-b-3">
         <span alt="Java" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="120px" height="120px"/>
         </span>
         <span alt="Spring Boot" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="120px" height="120px"/>
@@ -154,25 +155,25 @@
         <span alt="Intellij Community" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" width="120px" height="120px"/>
         </span>
       </div>
-      <div class="f-row m-t-4">
-        <b id="tech-sub" class="subtitle subtitle-multi f-self-start ">Maps Service:</b>
+        <b id="tech-sub" class="subtitle subtitle-multi m-auto">Maps Service:</b>
+      <div class="f-row-around m-b-3">
         <span alt="Mapbox" class="hov-desc"><img src="https://user-content.gitlab-static.net/47d151ad324455c46742c2500ce144bb7a89c499/68747470733a2f2f7777772e7376677265706f2e636f6d2f73686f772f3333313437362f6d6170626f782e737667" width="120px" height="120px"/>
         </span>
       </div>
-      <div class="f-row m-t-4">
-        <b id="tech-sub" class="subtitle subtitle-multi f-self-start ">Hosting:</b>
+        <b id="tech-sub" class="subtitle subtitle-multi">Hosting:</b>
+      <div class="f-row-around m-b-3">
         <span alt="XAMPP" class="hov-desc"><img src="https://user-content.gitlab-static.net/5fc743e8f3c389211a06b0180cee1fe09fb9bda1/68747470733a2f2f7777772e617061636865667269656e64732e6f72672f696d616765732f78616d70702d6c6f676f2d61633935306564662e737667" width="120px" height="120px"/>
         </span>
       </div>
-      <div class="f-row m-t-4">
-        <b id="tech-sub" class="subtitle subtitle-multi f-self-start ">Configuration, Dependencies:</b>
+        <b id="tech-sub" class="subtitle subtitle-multi">Configuration, Dependencies:</b>
+      <div class="f-row-around m-b-3">
         <span alt="Gradle" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gradle/gradle-plain.svg" width="120px" height="120px"/>
         </span>
         <span alt="Maven" class="hov-desc"><img src="https://user-content.gitlab-static.net/27fd052ee3929d0739d0708a90cc148063cbf4e4/68747470733a2f2f7777772e7376677265706f2e636f6d2f73686f772f3335343035312f6d6176656e2e737667" width="120px" height="120px"/>
         </span>
       </div>
-      <div class="f-row m-t-4">
-        <b id="tech-sub" class="subtitle subtitle-multi f-self-start ">Projectmanagement:</b>
+        <b id="tech-sub" class="subtitle subtitle-multi">Projectmanagement:</b>
+      <div class="f-row-around m-b-3">
         <span alt="Jira" class="hov-desc"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" width="120px" height="120px"/>
         </span>
       </div>

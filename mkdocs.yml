@@ -10,28 +10,21 @@ nav:
     - Vuecipes: projects/vuecipes.md
     - Planellos: projects/planellos.md
     - "FantasyQuest: Worldwalker Battles": projects/fantasyQuest.md
-    - Codename Ananas: projects/codenameAnanas.md
+    - Coderscape: projects/coderscape.md
     - VeggieWedges: projects/veggieWedges.md
     - PortfolioPage: projects/portfolio.md
   - Credits: 
     - Devicons: credits.md
-    - Devicons 2: credits.md
 
 
 extra_css:
   - ./css/style.css
   - ./css/projects.css
-  # - ./css/bootstrap/bootstrap.css
-  # - ./css/bootstrap/bootstrap.min.css
-  # - ./css/bootstrap/bootstrap-theme.css
-  # - ./css/bootstrap/bootstrap-theme.min.css
 
 
 extra_javascript:
     - ./js/main.js
     #- 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
-    # - ./js/bootstrap/bootstrap.js
-    # - ./js/bootstrap/bootstrap.min.js
 
 theme:
   name: material
