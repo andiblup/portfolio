@@ -96,7 +96,7 @@ function resetImg(id) {
 
   // MARK TEXT
   document.addEventListener('click', function() {
-    //console.log(new CopyPermission());
+    console.log(new CopyPermission());
     if (CopyPermission.getPermission()) {
       let popup = document.getElementById('copy-popup');
     // Prüfen, ob Text ausgewählt ist
@@ -148,36 +148,26 @@ class CopyPermission {
 
   constructor() {
     console.log("CopyPermission constructor: " + this.permission );
-    if (this.permission === undefined || this.permission === null) {
-      this.permission = confirm("On this page marking text automatically copies it to your clipboard.\nDo you agree?");
+    if (sessionStorage.getItem("copyPermission") === null) {
+      sessionStorage.setItem("copyPermission", confirm("On this page marking text automatically copies it to your clipboard.\nDo you agree?"));    
     } 
-    
-    return this.permission;
-    // console.log("CopyPermission constructor");
-    //  if (instance) {
-    //   return instance;
-    //  } else {
-    //   permission = confirm("On this page marking text automatically copies it to your clipboard.\nDo you agree?");
-    //   console.log("Permission: " + permission);
-    //   return this.instance = new CopyPermission();
-    //  };
+    return sessionStorage.getItem("copyPermission") === "true";
+    // if (this.permission === undefined || this.permission === null) {
+    //   this.permission = confirm("On this page marking text automatically copies it to your clipboard.\nDo you agree?");
+    // } 
+    // return this.permission;
   }
 
   static getPermission(){
-    if (this.permission === undefined || this.permission === null) {
-      return this.permission = confirm("On this page marking text automatically copies it to your clipboard.\nDo you agree?");
-    } else {
-      return this.permission;
-    }
+    if (sessionStorage.getItem("copyPermission") === null) {
+      sessionStorage.setItem("copyPermission", confirm("On this page marking text automatically copies it to your clipboard.\nDo you agree?"));    
+    } 
+    return sessionStorage.getItem("copyPermission") === "true";
+    // if (this.permission === undefined || this.permission === null) {
+    //   return this.permission = confirm("On this page marking text automatically copies it to your clipboard.\nDo you agree?");
+    // } else {
+    //   return this.permission;
+    // }
   }
 
-  getInstance() {
-    return instance;
-  }
-  getPermission() {
-    return permission;
-  }
-  setPermission(newPermission) {
-    return permission = newPermission;
-  }
 }
