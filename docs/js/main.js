@@ -13,7 +13,8 @@ showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-let i;
+try{
+  let i;
 let slides = document.getElementsByClassName("mySlides");
 let dots = document.getElementsByClassName("dot");
 if (n > slides.length) {slideIndex = 1}
@@ -26,8 +27,10 @@ for (i = 0; i < dots.length; i++) {
 }
 slides[slideIndex-1].style.display = "block";
 dots[slideIndex-1].className += " active";
+}catch (e) {
+  console.log(e);
 }
-
+}
 let imgIsBig = false;
 let next = document.getElementsByClassName("next");
 let prev = document.getElementsByClassName("prev");
@@ -111,11 +114,14 @@ function resetImg(id) {
           popup.classList.add("d-inline-flex");
           //popup.textContent = "Text copied:" + text;
          
-          popup.innerHTML = '<b>Copied text:</b><br>';
+          popup.innerHTML = '<b style="color: #7E56C2; font-size: 22px;">Copied text:</b><br>';
           //popup.innerHTML += text.replace('. ', '.<br>'); ///\n/g
           popup.innerHTML += text.replace(/\. |\;|\n/g, function(match) {
             return match === '\n' ? '<br>' : '.<br>';
         });
+          // popup.style.left = event.screenX + 'px';
+          // popup.style.top = event.screenY + 'px';
+          // ! Deprecated
           popup.style.left = event.clientX + 'px';
           popup.style.top = event.clientY + 'px';
           popup.style.display = 'inline-flex';
@@ -132,13 +138,24 @@ function resetImg(id) {
     }
   });
 
+  // document.addEventListener('mousemove', () => {
+  //   let popup = document.getElementById('copy-popup');
+  //     popup.style.left = (event.screenX + 5) + 'px';
+  //     popup.style.top = (event.screenY + 5) + 'px';
+  //     console.log(event.screenX + 'px');
+  // });
+
 
 
 setInterval(() => {
-  let popup = document.getElementById('copy-popup');
+  try {
+    let popup = document.getElementById('copy-popup');
   
-  popup.classList.remove("d-inline-flex");
-  popup.classList.add("d-none");
+    popup.classList.remove("d-inline-flex");
+    popup.classList.add("d-none");
+  } catch (e) {
+    console.log(e);
+  }
   
 }, 5000);
 
@@ -148,36 +165,26 @@ class CopyPermission {
 
   constructor() {
     console.log("CopyPermission constructor: " + this.permission );
-    if (this.permission === undefined || this.permission === null) {
-      this.permission = confirm("On this page marking text automatically copies it to your clipboard.\nDo you agree?");
+    if (sessionStorage.getItem("copyPermission") === null) {
+      sessionStorage.setItem("copyPermission", confirm("On this page marking text automatically copies it to your clipboard.\nDo you agree?"));    
     } 
-    
-    return this.permission;
-    // console.log("CopyPermission constructor");
-    //  if (instance) {
-    //   return instance;
-    //  } else {
-    //   permission = confirm("On this page marking text automatically copies it to your clipboard.\nDo you agree?");
-    //   console.log("Permission: " + permission);
-    //   return this.instance = new CopyPermission();
-    //  };
+    return sessionStorage.getItem("copyPermission") === "true";
+    // if (this.permission === undefined || this.permission === null) {
+    //   this.permission = confirm("On this page marking text automatically copies it to your clipboard.\nDo you agree?");
+    // } 
+    // return this.permission;
   }
 
   static getPermission(){
-    if (this.permission === undefined || this.permission === null) {
-      return this.permission = confirm("On this page marking text automatically copies it to your clipboard.\nDo you agree?");
-    } else {
-      return this.permission;
-    }
+    if (sessionStorage.getItem("copyPermission") === null) {
+      sessionStorage.setItem("copyPermission", confirm("On this page marking text automatically copies it to your clipboard.\nDo you agree?"));    
+    } 
+    return sessionStorage.getItem("copyPermission") === "true";
+    // if (this.permission === undefined || this.permission === null) {
+    //   return this.permission = confirm("On this page marking text automatically copies it to your clipboard.\nDo you agree?");
+    // } else {
+    //   return this.permission;
+    // }
   }
 
-  getInstance() {
-    return instance;
-  }
-  getPermission() {
-    return permission;
-  }
-  setPermission(newPermission) {
-    return permission = newPermission;
-  }
 }

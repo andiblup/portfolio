@@ -13,7 +13,8 @@ showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-let i;
+try{
+  let i;
 let slides = document.getElementsByClassName("mySlides");
 let dots = document.getElementsByClassName("dot");
 if (n > slides.length) {slideIndex = 1}
@@ -26,8 +27,10 @@ for (i = 0; i < dots.length; i++) {
 }
 slides[slideIndex-1].style.display = "block";
 dots[slideIndex-1].className += " active";
+}catch (e) {
+  console.log(e);
 }
-
+}
 let imgIsBig = false;
 let next = document.getElementsByClassName("next");
 let prev = document.getElementsByClassName("prev");
@@ -91,9 +94,83 @@ function resetImg(id) {
   img = document.getElementById(id);
   img.style.transform = "scale(1)";
   img.style.transition = "transform 0.25s ease";
-  //img.style.marginTop = "0rem";
   
-  // img = document.getElementById(id);
-  // slides[slideIndex-1].style.transform = "scale(1)";
-  // slides[slideIndex-1].style.transition = "transform 0.25s ease";
   }
+
+  // MARK TEXT
+  document.addEventListener('click', function() {
+    console.log(new CopyPermission());
+    if (CopyPermission.getPermission()) {
+      let popup = document.getElementById('copy-popup');
+    // Prüfen, ob Text ausgewählt ist
+    let text = window.getSelection().toString();
+    if (event.target == popup){
+      popup.classList.remove("d-inline-flex");
+      popup.classList.add("d-none");
+    }else if (text) {
+      navigator.clipboard.writeText(text)
+        .then(() => {
+          popup.classList.remove("d-none");
+          popup.classList.add("d-inline-flex");
+          //popup.textContent = "Text copied:" + text;
+         
+          popup.innerHTML = '<b>Copied text:</b><br>';
+          //popup.innerHTML += text.replace('. ', '.<br>'); ///\n/g
+          popup.innerHTML += text.replace(/\. |\;|\n/g, function(match) {
+            return match === '\n' ? '<br>' : '.<br>';
+        });
+          popup.style.left = event.clientX + 'px';
+          popup.style.top = event.clientY + 'px';
+          popup.style.display = 'inline-flex';
+  
+          // setTimeout(() => {
+          //   popup.classList.remove("d-inline-flex");
+          //   popup.classList.add("d-none");
+          // }, 3000);
+        })
+        .catch(err => {
+          console.error("Error copying the text: ", err);
+        });
+      }
+    }
+  });
+
+
+
+setInterval(() => {
+  let popup = document.getElementById('copy-popup');
+  
+  popup.classList.remove("d-inline-flex");
+  popup.classList.add("d-none");
+  
+}, 5000);
+
+// SIngleton checker if copy allowed
+class CopyPermission {
+  static permission;
+
+  constructor() {
+    console.log("CopyPermission constructor: " + this.permission );
+    if (sessionStorage.getItem("copyPermission") === null) {
+      sessionStorage.setItem("copyPermission", confirm("On this page marking text automatically copies it to your clipboard.\nDo you agree?"));    
+    } 
+    return sessionStorage.getItem("copyPermission") === "true";
+    // if (this.permission === undefined || this.permission === null) {
+    //   this.permission = confirm("On this page marking text automatically copies it to your clipboard.\nDo you agree?");
+    // } 
+    // return this.permission;
+  }
+
+  static getPermission(){
+    if (sessionStorage.getItem("copyPermission") === null) {
+      sessionStorage.setItem("copyPermission", confirm("On this page marking text automatically copies it to your clipboard.\nDo you agree?"));    
+    } 
+    return sessionStorage.getItem("copyPermission") === "true";
+    // if (this.permission === undefined || this.permission === null) {
+    //   return this.permission = confirm("On this page marking text automatically copies it to your clipboard.\nDo you agree?");
+    // } else {
+    //   return this.permission;
+    // }
+  }
+
+}

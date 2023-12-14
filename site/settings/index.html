@@ -9,6 +9,8 @@
       
       
       
+        <link rel="prev" href="../credits/">
+      
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -16,7 +18,7 @@
     
     
       
-        <title>Progress - Portfolio Alfred Narjes</title>
+        <title>Settings - Portfolio Alfred Narjes</title>
       
     
     
@@ -74,6 +76,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#auto-copy" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -106,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Progress
+              Settings
             
           </span>
         </div>
@@ -249,9 +256,11 @@
         
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../settings/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
     
@@ -683,10 +692,28 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../settings/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Settings
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -695,6 +722,33 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#auto-copy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auto copy
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -714,59 +768,60 @@
                   
 
 
-  <h1>Progress</h1>
+  <h1>Settings</h1>
 
-<style rel="stylesheet" href="css/style.css"></style>
+<p><link rel="stylesheet" href="./projects.css"></p>
+<div id="copy-popup" class="hov-desc2 d-none" ></div>
+<h2 id="auto-copy">Auto copy</h2>
+<div class="d-flex">
+<i class="mdi mdi-toggle-switch"></i>
+<svg id="copy-toggle-on" style="width: 180px; height: 100px;" class="d-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>toggle-switch</title><path d="M17,7H7A5,5 0 0,0 2,12A5,5 0 0,0 7,17H17A5,5 0 0,0 22,12A5,5 0 0,0 17,7M17,15A3,3 0 0,1 14,12A3,3 0 0,1 17,9A3,3 0 0,1 20,12A3,3 0 0,1 17,15Z" /></svg>
+<svg id="copy-toggle-off" style="width: 180px; height: 100px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>toggle-switch-off-outline</title><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" /></svg>
+</div>
 
-<!-- <div id="progress-bar"></div> -->
-<div id="container"></div>
-<script src="https://cdn.jsdelivr.net/npm/progressbar.js@1.1.0/dist/progressbar.min.js"></script>
 <script>
-    // var bar = new ProgressBar.Line('#progress-bar', { strokeWidth: 2 });
-    // bar.animate(0.7);  // Beispiel: Setzt den Fortschritt auf 70%
-let bar = new ProgressBar.Line(container, {
-  strokeWidth: 4,
-  easing: 'easeInOut',
-  duration: 1400,
-  color: '#FFEA82',
-  trailColor: '#eee',
-  trailWidth: 1,
-  svgStyle: {width: '100%', height: '100%'},
-  text: {
-    style: {
-      // Text color.
-      // Default: same as stroke color (options.color)
-      color: '#999',
-      position: 'absolute',
-      right: '0',
-      top: '30px',
-      padding: 0,
-      margin: 0,
-      transform: null
-    },
-    autoStyleContainer: false
-  },
-  from: {color: '#FFEA82'},
-  to: {color: '#ED6A5A'},
-  step: (state, bar) => {
-    bar.setText(Math.round(bar.value() * 100) + ' / 100');
-  }
-});
-let full = false
-setInterval(() => {
-    if (!full){
-        bar.animate(0.7);
-        full = !full;
+    const toggleOn = document.getElementById("copy-toggle-on");
+    const toggleOff = document.getElementById("copy-toggle-off");
+    if (sessionStorage.getItem("copyPermission") === "true"){
+        toggleOn.classList.remove("d-none");
+        toggleOff.classList.add("d-none");
+    } else {
+        toggleOff.classList.remove("d-none");
+        toggleOn.classList.add("d-none");
     }
-}, 2000);
-setInterval(() => {
-    if (full){
-        bar.animate(0.0);
-        full = !full;
-    }
-}, 4000);
-
+    toggleOn.addEventListener('click', (e) => {
+        toggleOff.classList.remove("d-none");
+        toggleOn.classList.add("d-none");
+        sessionStorage.setItem("copyPermission", "false")
+    });
+    toggleOff.addEventListener('click', (e) => {
+        toggleOn.classList.remove("d-none");
+        toggleOff.classList.add("d-none");
+        sessionStorage.setItem("copyPermission", "true");
+    })
 </script>
+
+<!-- <script>
+    const toggle = document.getElementById("copy-toggle");
+    if (sessionStorage.getItem("copyPermission") === "true"){
+        toggle.classList.remove("fa-toggle-off");
+        toggle.classList.add("fa-toggle-on");
+    } else {
+        toggle.classList.remove("fa-toggle-on");
+        toggle.classList.add("fa-toggle-off");
+    }
+    toggle.addEventListener('click', (e) => {
+        if (sessionStorage.getItem("copyPermission") === "true"){
+            toggle.classList.remove("fa-toggle-on");
+            toggle.classList.add("fa-toggle-off");
+            sessionStorage.setItem("copyPermission") === "false"
+        } else {
+            toggle.classList.remove("fa-toggle-off");
+            toggle.classList.add("fa-toggle-on");
+            sessionStorage.setItem("copyPermission") === "true"
+        }
+    })
+</script> -->
 
 
 

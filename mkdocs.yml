@@ -14,7 +14,8 @@ nav:
     - VeggieWedges: projects/veggieWedges.md
     - PortfolioPage: projects/portfolio.md
   - Credits: 
-    - Devicons: credits.md
+    - Thanks to: credits.md
+  - Settings: settings.md
 
 
 extra_css:
