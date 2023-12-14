@@ -200,7 +200,7 @@
   font-weight: bold;
 }
 .subtitle-multi {
-  margin-left: -2%!important;
+  margin-left: 2%!important;
 }
 
 li{
@@ -245,4 +245,14 @@ li{
 #down-sub-3{
   margin: 0;
 }
+
+*::selection{
+  color: white;
+  background: teal;
+}
+*:hover::selection{
+  color: white;
+  background: #7E56C2;
+}
+
 
