@@ -13,7 +13,8 @@ showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-let i;
+try{
+  let i;
 let slides = document.getElementsByClassName("mySlides");
 let dots = document.getElementsByClassName("dot");
 if (n > slides.length) {slideIndex = 1}
@@ -26,8 +27,10 @@ for (i = 0; i < dots.length; i++) {
 }
 slides[slideIndex-1].style.display = "block";
 dots[slideIndex-1].className += " active";
+}catch (e) {
+  console.log(e);
 }
-
+}
 let imgIsBig = false;
 let next = document.getElementsByClassName("next");
 let prev = document.getElementsByClassName("prev");
