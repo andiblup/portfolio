@@ -152,8 +152,14 @@ p {
 
 
 
-
-
+td {
+  width: 2%!important;
+  text-align: center!important;
+  vertical-align: middle!important;
+}
+td:nth-child(4n) {
+  width: 5%!important;
+}
 
 
 
@@ -294,4 +300,14 @@ ol li::marker, ul li::marker {
 }
 .d-inline-flex{
   display: inline-flex;
+}
+
+#auto-copy {
+  margin-top: 0px;
+  margin-bottom: 2.5%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+.md-main__inner{padding: 3%;
 }
