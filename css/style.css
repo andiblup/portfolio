@@ -152,8 +152,14 @@ p {
 
 
 
-
-
+td {
+  width: 2%!important;
+  text-align: center!important;
+  vertical-align: middle!important;
+}
+td:nth-child(4n) {
+  width: 5%!important;
+}
 
 
 

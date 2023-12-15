@@ -99,7 +99,7 @@ function resetImg(id) {
 
   // MARK TEXT
   document.addEventListener('click', function() {
-    console.log(new CopyPermission());
+    //console.log(new CopyPermission());
     if (CopyPermission.getPermission()) {
       let popup = document.getElementById('copy-popup');
     // Prüfen, ob Text ausgewählt ist
@@ -114,11 +114,14 @@ function resetImg(id) {
           popup.classList.add("d-inline-flex");
           //popup.textContent = "Text copied:" + text;
          
-          popup.innerHTML = '<b>Copied text:</b><br>';
+          popup.innerHTML = '<b style="color: #7E56C2; font-size: 22px;">Copied text:</b><br>';
           //popup.innerHTML += text.replace('. ', '.<br>'); ///\n/g
           popup.innerHTML += text.replace(/\. |\;|\n/g, function(match) {
             return match === '\n' ? '<br>' : '.<br>';
         });
+          // popup.style.left = event.screenX + 'px';
+          // popup.style.top = event.screenY + 'px';
+          // ! Deprecated
           popup.style.left = event.clientX + 'px';
           popup.style.top = event.clientY + 'px';
           popup.style.display = 'inline-flex';
@@ -135,13 +138,24 @@ function resetImg(id) {
     }
   });
 
+  // document.addEventListener('mousemove', () => {
+  //   let popup = document.getElementById('copy-popup');
+  //     popup.style.left = (event.screenX + 5) + 'px';
+  //     popup.style.top = (event.screenY + 5) + 'px';
+  //     console.log(event.screenX + 'px');
+  // });
+
 
 
 setInterval(() => {
-  let popup = document.getElementById('copy-popup');
+  try {
+    let popup = document.getElementById('copy-popup');
   
-  popup.classList.remove("d-inline-flex");
-  popup.classList.add("d-none");
+    popup.classList.remove("d-inline-flex");
+    popup.classList.add("d-none");
+  } catch (e) {
+    console.log(e);
+  }
   
 }, 5000);
 
@@ -174,3 +188,47 @@ class CopyPermission {
   }
 
 }
+
+
+// TABLES
+// document.getElementsByTagName('thead').foreach(thead => {
+//   thead.addEventListener('click', (event) => {
+//     // Überprüfen, ob auf ein TH-Element geklickt wurde
+//     console.log(event.target.tagName);
+//     if (event.target.tagName === 'TH') {
+//       // Finden Sie das dazugehörige TBODY-Element und schalten Sie seine Sichtbarkeit um
+//       this.closest('table').querySelector('tbody').style.display = this.closest('table').querySelector('tbody').style.display === 'none' ? '' : 'none';
+//     }
+//   });
+// });
+// Holen Sie sich alle 'thead'-Elemente
+const theads = document.getElementsByTagName('thead');
+
+// Fügen Sie jedem 'thead' einen Event-Listener hinzu
+Array.from(theads).forEach(thead => {
+  thead.addEventListener('click', function(event) {
+    // Überprüfen, ob auf ein TH-Element geklickt wurde
+    if (event.target.tagName === 'TH') {
+      // Finden Sie das dazugehörige TBODY-Element und schalten Sie seine Sichtbarkeit um
+      const tbody = this.closest('table').querySelector('tbody');
+      tbody.style.display = tbody.style.display === 'none' ? '' : 'none';
+    }
+  });
+});
+
+
+// function toggleTable(number){
+//   console.log(element);
+//   //element.parentElement.classList.add("d-none");
+
+
+
+//   document.getElementsByClassName('md-typeset__table').querySelector('thead').addEventListener('click', function(event) {
+//     // Überprüfen, ob auf ein TH-Element geklickt wurde
+//   console.log(event.target.tagName);
+//     if (event.target.tagName === 'TH') {
+//       // Finden Sie das dazugehörige TBODY-Element und schalten Sie seine Sichtbarkeit um
+//       this.closest('table').querySelector('tbody').style.display = this.closest('table').querySelector('tbody').style.display === 'none' ? '' : 'none';
+//     }
+//   });
+//}
