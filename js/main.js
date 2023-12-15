@@ -79,13 +79,6 @@ function enlargeImg(id) {
         element.style.display = "none"
       }
 
-      // slides[slideIndex-1].style.transform = "scale(3)";
-      // slides[slideIndex-1].style.transition = "transform 0.25s ease";
-      // slides[slideIndex-1].style.marginTop = "5rem";
-      // imgIsBig = true;
-      // next.style.display = "none";
-      // prev.style.display = "none";
-      // caption.style.display = "none";
 
   }
   
@@ -166,7 +159,7 @@ class CopyPermission {
   constructor() {
     console.log("CopyPermission constructor: " + this.permission );
     if (sessionStorage.getItem("copyPermission") === null) {
-      sessionStorage.setItem("copyPermission", confirm("On this page marking text automatically copies it to your clipboard.\nDo you agree?"));    
+      sessionStorage.setItem("copyPermission", confirm("On this page marking text automatically copies it to your clipboard.\nYou can change this everytime in the settings.\nDo you agree?"));    
     } 
     return sessionStorage.getItem("copyPermission") === "true";
     // if (this.permission === undefined || this.permission === null) {
@@ -177,7 +170,7 @@ class CopyPermission {
 
   static getPermission(){
     if (sessionStorage.getItem("copyPermission") === null) {
-      sessionStorage.setItem("copyPermission", confirm("On this page marking text automatically copies it to your clipboard.\nDo you agree?"));    
+      sessionStorage.setItem("copyPermission", confirm("On this page marking text automatically copies it to your clipboard.\nYou can change this everytime in the settings.\nDo you agree?"));    
     } 
     return sessionStorage.getItem("copyPermission") === "true";
     // if (this.permission === undefined || this.permission === null) {
