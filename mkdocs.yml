@@ -45,11 +45,11 @@ theme:
     - navigation.bottom
     
     - navigation.expand
-    - navigation.instant
-    - navigation.instant.progress
-    - navigation.instant.prefetch
+    # - navigation.instant
+    # - navigation.instant.progress
+    # - navigation.instant.prefetch
 
-    - navigation.tracking
+    # - navigation.tracking
     - navigation.indexes
   language: en
   palette:
