@@ -188,3 +188,47 @@ class CopyPermission {
   }
 
 }
+
+
+// TABLES
+// document.getElementsByTagName('thead').foreach(thead => {
+//   thead.addEventListener('click', (event) => {
+//     // Überprüfen, ob auf ein TH-Element geklickt wurde
+//     console.log(event.target.tagName);
+//     if (event.target.tagName === 'TH') {
+//       // Finden Sie das dazugehörige TBODY-Element und schalten Sie seine Sichtbarkeit um
+//       this.closest('table').querySelector('tbody').style.display = this.closest('table').querySelector('tbody').style.display === 'none' ? '' : 'none';
+//     }
+//   });
+// });
+// Holen Sie sich alle 'thead'-Elemente
+const theads = document.getElementsByTagName('thead');
+
+// Fügen Sie jedem 'thead' einen Event-Listener hinzu
+Array.from(theads).forEach(thead => {
+  thead.addEventListener('click', function(event) {
+    // Überprüfen, ob auf ein TH-Element geklickt wurde
+    if (event.target.tagName === 'TH') {
+      // Finden Sie das dazugehörige TBODY-Element und schalten Sie seine Sichtbarkeit um
+      const tbody = this.closest('table').querySelector('tbody');
+      tbody.style.display = tbody.style.display === 'none' ? '' : 'none';
+    }
+  });
+});
+
+
+// function toggleTable(number){
+//   console.log(element);
+//   //element.parentElement.classList.add("d-none");
+
+
+
+//   document.getElementsByClassName('md-typeset__table').querySelector('thead').addEventListener('click', function(event) {
+//     // Überprüfen, ob auf ein TH-Element geklickt wurde
+//   console.log(event.target.tagName);
+//     if (event.target.tagName === 'TH') {
+//       // Finden Sie das dazugehörige TBODY-Element und schalten Sie seine Sichtbarkeit um
+//       this.closest('table').querySelector('tbody').style.display = this.closest('table').querySelector('tbody').style.display === 'none' ? '' : 'none';
+//     }
+//   });
+//}
