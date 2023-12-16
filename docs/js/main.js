@@ -186,17 +186,26 @@ class CopyPermission {
 // TABLES
 
 // Holen Sie sich alle 'thead'-Elemente
-const theads = document.getElementsByTagName('thead');
+//const theads = document.getElementsByTagName('thead');
+let tables = document.getElementsByTagName('table');
+
 
 // Fügen Sie jedem 'thead' einen Event-Listener hinzu
-Array.from(theads).forEach(thead => {
-  thead.addEventListener('click', function(event) {
+Array.from(tables).forEach(t => {
+  t.addEventListener('click', function(event) {
     // Überprüfen, ob auf ein TH-Element geklickt wurde
-    if (event.target.tagName === 'TH') {
-      // Finden Sie das dazugehörige TBODY-Element und schalten Sie seine Sichtbarkeit um
-      const tbody = this.closest('table').querySelector('tbody');
+    //if (event.target.tagName === 'TH') {
+      
+      //this.closest('table').closest('.md-typeset__table').style.width = '100%';
+      t.closest('.md-typeset__table').style.width = '100%';
+      t.closest('.md-typeset__table').style.width = '100%';
+      this.querySelector('thead').style.width = '100%!important';
+      const tbody = this.querySelector('tbody');
       tbody.style.display = tbody.style.display === 'none' ? '' : 'none';
-    }
+      
+     
+      event.stopPropagation()
+    //}
   });
 });
 
