@@ -184,7 +184,7 @@
 ## Projects
 ---
 
-### <a href="/projects/rainbowSnake/">Rainbow Snake</a>:
+### <a href="/portfolio/projects/rainbowSnake/">Rainbow Snake</a>:
 
 <blockquote class="blockquote"><b>
 <a>Python</a>, <a>Turtle</a></b></blockquote>
@@ -202,7 +202,7 @@ Rainbow Snake became more than a mere coding exercise; it became a reflection of
 
 ---
 
-#### <a href="/projects/pingPongGoneWrong">Ping-Pong-Gone_Wrong</a>:
+#### <a href="/portfolio/projects/pingPongGoneWrong">Ping-Pong-Gone_Wrong</a>:
 
 <blockquote class="blockquote"><b>
 <a>Python</a>, <a>Turtle</a></b></blockquote>
@@ -212,7 +212,7 @@ My second project was going to be another classic game, but this time one that c
 
 ---
 
-#### <a href="/projects/csvManipulation">Python Script for a csv formation</a>:
+#### <a href="/portfolio/projects/csvManipulation">Python Script for a csv formation</a>:
 
 <blockquote class="blockquote"><b>
 <a>Python</a></b></blockquote>
@@ -222,7 +222,7 @@ A script I wrote for a friend for CSV manipulation. It splits the data received 
 
 ---
 
-#### <a href="/projects/badUI">Bad UI/UX:</a>
+#### <a href="/portfolio/projects/badUI">Bad UI/UX:</a>
 
 <blockquote class="blockquote"><b>
 <a>HTML</a>, <a>CSS</a>, <a>JavaScript</a></b></blockquote>
@@ -232,7 +232,7 @@ As one of our initial tasks at CODERS.BAY Vienna, we were tasked with creating a
 
 ---
 
-#### <a href="/projects/vuecipes">Vuecipes</a>:
+#### <a href="/portfolio/projects/vuecipes">Vuecipes</a>:
 
 <blockquote class="blockquote"><b>
 <a>HTML</a>, <a>SCSS</a>, <a>JavaScript</a>, <a>Vue3</a>, <a>Vuetify</a>, <a>npm</a></b></blockquote>
@@ -242,7 +242,7 @@ For our first practical project with VUE.js 3, we were provided with a backend. 
 
 ---
 
-#### <a href="/projects/planellos">Planellos</a>:
+#### <a href="/portfolio/projects/planellos">Planellos</a>:
 
 <blockquote class="blockquote"><b>
 <a>HTML</a>, <a>SCSS</a>, <a>JavaScript</a>, <a>Vue3</a>, <a>Vuetify</a>, <a>npm</a></b></blockquote>
@@ -252,7 +252,7 @@ For our 4-week final project in Web Frontend, I built a Trello replica. Similar 
 
 ---
 
-#### <a href="/projects/fantasyQuest/">FantasyQuest: Worldwalker Battles</a>:
+#### <a href="/portfolio/projects/fantasyQuest/">FantasyQuest: Worldwalker Battles</a>:
 
 
 <blockquote class="blockquote"><span class="bold c-teal">Android Application</span><b><span class="bold c-custom-purple">:</span> <a>Kotlin</a>, <a>Android Jetpack</a> & <a>Compose</a><a><span class="blockquote-at"> @</span>Android Studio</a></b></blockquote>
@@ -276,7 +276,7 @@ Working with location data for the first time was the most challenging aspect fo
 
 ---
 
-#### <a href="/projects/coderscape/">Coderscape</a>:
+#### <a href="/portfolio/projects/coderscape/">Coderscape</a>:
 
 <blockquote class="blockquote"><b><a>Java</a>, <a>JMonkeyEngine</a>, <a>Gradle</a>, <a>Maven</a></b></blockquote>
 <blockquote class="blockquote"><b><a><span class="blockquote-at">@</span>Intellij Community</a>, <a>JMonkeyEngineSDK</a></b></blockquote>
@@ -287,7 +287,7 @@ Working together as a group of seven individuals, we are developing a 3D or puzz
 
 ---
 
-#### <a href="/projects/veggieWedges/">VeggieWedges</a>:
+#### <a href="/portfolio/projects/veggieWedges/">VeggieWedges</a>:
 
 <blockquote class="blockquote"><b><a>HTML</a>, <a>SCSS</a>, <a>Bootstrap</a>, <a>JavaScript</a>, <a>PHP</a>, <a>Laravel</a></b></blockquote>
 <blockquote class="blockquote"><b><a><span class="blockquote-at">@</span>VS Code</a></b></blockquote>
@@ -298,7 +298,7 @@ Users can safely register and log in to easily browse and select products. The u
 
 ---
 
-#### <a href="/projects/portfolio">Portfolio Page</a>:
+#### <a href="/portfolio/projects/portfolio">Portfolio Page</a>:
 
 <blockquote class="blockquote"><b><a>Markdown</a>, <a>MKDocs</a>, <a>Python</a>, <a>HTML</a>, <a>CSS</a>, <a>JavaScript</a></b></blockquote>
 <blockquote class="blockquote"><b><a><span class="blockquote-at">@</span>VS Code</a></b></blockquote>
