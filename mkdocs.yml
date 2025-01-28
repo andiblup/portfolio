@@ -1,0 +1,88 @@
+site_name: Portfolio Alfred Narjes
+
+nav:
+  - Home: index.md
+  - Projects:
+    - Rainbow Snake: projects/rainbowSnake.md
+    - Ping-Pong-Gone-Wrong: projects/pingPongGoneWrong.md
+    - CSV Manipulation: projects/csvManipulation.md
+    - Bad UI/UX: projects/badUI.md
+    - Vuecipes: projects/vuecipes.md
+    - Planellos: projects/planellos.md
+    - "FantasyQuest: Worldwalker Battles": projects/fantasyQuest.md
+    - Coderscape: projects/coderscape.md
+    - VeggieWedges: projects/veggieWedges.md
+    - PortfolioPage: projects/portfolio.md
+  - Credits: 
+    - Thanks to: credits.md
+  - Settings: settings.md
+
+
+extra_css:
+  - ./css/style.css
+  - ./css/projects.css
+
+
+extra_javascript:
+    - ./js/main.js
+    #- 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+
+theme:
+  name: material
+  icon:
+    logo: fontawesome/solid/laptop-code
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - navigation.bottom
+    
+    - navigation.expand
+    # - navigation.instant
+    # - navigation.instant.progress
+    # - navigation.instant.prefetch
+
+    # - navigation.tracking
+    - navigation.indexes
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny #/light.png #fontawesome/solid/sun #material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: deep purple
+      accent: teal
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night #/dark.png #material/weather-night #fontawesome/solid/moon #material/toggle-switch
+        name: Switch to light mode
+      primary: deep purple
+      accent: teal
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/andiblup
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.com/andiblup
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/alfrednarjes/
+
+markdown_extensions:
+  - admonition
+  - pymdownx.arithmatex
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.progressbar
+  - codehilite
+  - pymdownx.superfences
+  - attr_list
