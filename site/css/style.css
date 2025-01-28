@@ -311,3 +311,32 @@ ol li::marker, ul li::marker {
 
 .md-main__inner{padding: 3%;
 }
+
+.overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+/* Modalfenster */
+.modal {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  text-align: center;
+}
+.modal p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.modal button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}

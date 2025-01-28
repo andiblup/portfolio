@@ -1,4 +1,31 @@
 
+window.addEventListener('load', function() {
+  // Prüfen, ob das Popup in diesem Browser schon gezeigt wurde
+  const alreadyShown = localStorage.getItem('portfolio-confirm-shown');
+  if (!alreadyShown) {
+    // Noch nicht gezeigt -> Overlay/Modal anzeigen
+    document.getElementById('customConfirm').style.display = 'flex';
+  }
+
+  // Buttons holen
+  const stayBtn = document.getElementById('stayBtn');
+  const goBtn = document.getElementById('goBtn');
+
+  // Button: Stay
+  stayBtn.addEventListener('click', function() {
+    // Modal ausblenden
+    document.getElementById('customConfirm').style.display = 'none';
+    // Merker setzen, damit es nur einmal erscheint
+    localStorage.setItem('portfolio-confirm-shown', 'true');
+  });
+
+  // Button: Go
+  goBtn.addEventListener('click', function() {
+    // Weiterleitung zur neuen Seite
+    window.location.href = 'https://andiblup.github.io';
+  });
+});
+
 const settingsElement = document.querySelectorAll('.md-tabs__link')[3];
 
 if (settingsElement){

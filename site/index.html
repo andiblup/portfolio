@@ -67,7 +67,18 @@
     
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="teal">
   
-    
+      <div class="overlay" id="customConfirm" style="display: none;">
+        <div class="modal">
+          <p>
+            There’s a new portfolio online. It’s still in development, so not all features,
+            pages, or designs are finished yet and might cause errors.
+            If you have any suggestions or recommendations, feel free to contact me at
+            <strong>alfred.narjes@gmail.com</strong>.
+          </p>
+          <button id="stayBtn">Stay on this page</button>
+          <button id="goBtn">Go to the new page</button>
+        </div>
+      </div>
     
       <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
