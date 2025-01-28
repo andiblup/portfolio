@@ -1,5 +1,5 @@
 
-window.addEventListener('load', function() {
+// window.addEventListener('load', function() {
   // Prüfen, ob das Popup in diesem Browser schon gezeigt wurde
   const alreadyShown = localStorage.getItem('portfolio-confirm-shown');
   if (!alreadyShown) {
@@ -24,7 +24,7 @@ window.addEventListener('load', function() {
     // Weiterleitung zur neuen Seite
     window.location.href = 'https://andiblup.github.io';
   });
-});
+// });
 
 const settingsElement = document.querySelectorAll('.md-tabs__link')[3];
 
